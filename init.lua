@@ -1,5 +1,6 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
+vim.o.guifont = "FiraMono Nerd Font"
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -31,6 +32,14 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "autocmds"
+
+-- MY loading
+require 'nvim-treesitter.install'.compilers = {'gcc'}
+require 'render-markdown'.enable()
+require 'mini.surround'.setup()
+require 'mini.align'.setup()
+require 'my.commands'
+require 'my.keymaps'
 
 vim.schedule(function()
   require "mappings"
