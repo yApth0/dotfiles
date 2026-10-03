@@ -13,6 +13,23 @@ return {
         end,
     },
 
+    {
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+        dependencies = { "mason-org/mason.nvim" },
+        lazy = false,
+        opts = {
+            ensure_installed = {
+                "clangd",
+                "cpplint",
+                "lua-language-server",
+                "stylua",
+                "html-lsp",
+                "css-lsp",
+                "neocmakelsp",
+            },
+        },
+    },
+
     -- test new blink
     { import = "nvchad.blink.lazyspec" },
     {

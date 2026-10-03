@@ -23,6 +23,6 @@ vim.lsp.config('clangd', {
   end,
 })
 
-local servers = { "html", "cssls", "clangd", "lua-language-server", "cmake-language-server"}
+local servers = { "html", "cssls", "clangd", "lua_ls", "neocmake" }
 vim.lsp.enable(servers)
 -- read :h vim.lsp.config for changing options of lsp servers 
