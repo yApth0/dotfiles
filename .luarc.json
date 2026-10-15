@@ -1,0 +1,6 @@
+{
+    "diagnostics.globals": [
+        "compile_cpp",
+        "compile_python"
+    ]
+}

@@ -1,5 +1,6 @@
 My NvChad configs.
 
+NvChad paired with Neovide.
 
 ## Tested on
 

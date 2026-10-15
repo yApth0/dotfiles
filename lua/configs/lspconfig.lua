@@ -8,7 +8,7 @@ vim.lsp.config('clangd', {
   init_options = {
     fallbackFlags = {"-std=c++26"}
   },
-  root_markers = { '.clang-format', 'compile_commands.json' },
+  root_markers = { '.clangd', '.clang-format', 'compile_commands.json', 'compile_flags.txt', '.git' },
   capabilities = {
     textDocument = {
       completion = {
@@ -23,6 +23,7 @@ vim.lsp.config('clangd', {
   end,
 })
 
-local servers = { "html", "cssls", "clangd", "lua_ls", "neocmake" }
+local servers = { "html", "cssls", "clangd", "lua_ls", "neocmake", "pyright"}
+
 vim.lsp.enable(servers)
 -- read :h vim.lsp.config for changing options of lsp servers 

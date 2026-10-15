@@ -1,12 +1,14 @@
 require "nvchad.options"
 
--- add yours here!
+local config = require("my_config")
 
 local o = vim.o
 o.relativenumber = true
-o.tabstop = 4
-o.shiftwidth = 4
+o.tabstop = config.tabspace
+o.shiftwidth = config.tabspace
 o.expandtab = true
-o.softtabstop = 4
+o.softtabstop = config.tabspace
+o.guifont = config.gui_font
+
 -- o.shell = "bash.exe"
 -- o.cursorlineopt ='both' -- to enable cursorline!
