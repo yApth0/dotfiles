@@ -1,0 +1,25 @@
+# font + language
+language = en_us
+font-family = MesloLGS NF
+font-size = 12
+font-feature = -liga
+
+# theme
+theme = Gruvbox Dark 
+# Everforest Dark Hard
+
+# background colors
+background-opacity = 0.80
+background-blur = 16
+background = #0F0F0F
+selection-background = #DFA000
+selection-foreground = #000000
+# background = #000000
+
+# cursor
+cursor-style = block
+cursor-style-blink = true
+cursor-click-to-move = true
+
+shell-integration-features = no-cursor
+shell-integration = zsh

@@ -1,0 +1,108 @@
+[global]
+    monitor = 0
+    follow = none
+    width = 370
+    height = 100
+    origin = top-right
+    offset = (10, 50)
+    scale = 0
+    notification_limit = 4
+
+    ### Progress bar ###
+    progress_bar = false
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 0
+    progress_bar_corners = all
+    icon_corner_radius = 0
+    icon_corners = all
+    indicate_hidden = yes
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    text_icon_padding = 0
+    frame_width = 1
+    frame_color = "#DFA00078"
+    gap_size = 5
+    separator_color = frame
+    sort = yes
+    idle_threshold = 300
+
+    ### Text ###
+    font = MesloLGS NF 10
+    line_height = 0
+    markup = full
+    format = "<span style='italic' weight='light'>%a</span>\n<b>%s</b>\n%b"
+    alignment = right
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = end
+    ignore_newline = yes 
+    stack_duplicates = false
+    # hide_duplicate_count = false
+    show_indicators = yes
+    enable_posix_regex = true
+
+    ### Icons ###
+    enable_recursive_icon_lookup = true
+    icon_theme = yet-another-monochrome-icon-set, breeze-dark
+    icon_position = left
+    min_icon_size = 40
+    max_icon_size = 40
+    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+
+    ### History ###
+    sticky_history = yes
+    history_length = 20
+
+    ### Misc/Advanced ###
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 2
+    corners = all
+    ignore_dbusclose = true
+
+    ### Wayland ###
+    layer = top
+    force_xwayland = false
+
+    ### Legacy ###
+    force_xinerama = false
+
+    ### Mouse ###
+    mouse_left_click = open_url, close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+[experimental]
+    per_monitor_dpi = true
+    pause_on_mouse_over = true
+    enable_pcre_regex = false
+
+[urgency_low]
+    background = "#0808089f"
+    foreground = "#8888887f"
+    timeout = 3
+    # Icon for notifications with low urgency
+    default_icon = dialog-information
+
+[urgency_normal]
+    background = "#0808089f"
+    foreground = "#ffffff"
+    timeout = 3
+    override_pause_level = 30
+    default_icon = dialog-information
+
+[urgency_critical]
+    background = "#2200008f"
+    foreground = "#ffffff"
+    frame_color = "#FF0000"
+    timeout = 0
+    override_pause_level = 60
+    # Icon for notifications with critical urgency
+    default_icon = dialog-warning
