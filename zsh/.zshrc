@@ -30,11 +30,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 autoload -U compinit && compinit
 
-# this is customized to half-life
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # yellow dirs -> match half-life lambda
-LS_COLORS=$LS_COLORS:'di=1;93:';
+LS_COLORS=$LS_COLORS:'di=1;93:ow=1;93;2:';
 export LS_COLORS
 
 # globals
