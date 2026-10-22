@@ -125,7 +125,7 @@ hl.config({
         kb_layout  = "br",
         kb_variant = "",
         kb_model   = "abnt2",
-        kb_options = "",
+        kb_options = "caps:none",
         kb_rules   = "",
 
         follow_mouse = 1,
